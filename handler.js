@@ -7,6 +7,7 @@ module.exports.getOsInfo = async (event) => {
     body: JSON.stringify(
       {
         osName: os.hostname(),
+        osArch: os.arch(),
         osPlatform: os.platform(),
         osCPU: os.cpus(),
         // 1mb = 1048576
